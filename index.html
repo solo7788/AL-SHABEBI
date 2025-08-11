@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مكتب الشبيبي للتخليص الجمركي | المركز الرئيسي: منفذ الوديعة</title>
+  <meta name="description" content="مكتب الشبيبي للتخليص الجمركي – المركز الرئيسي: منفذ الوديعة. تخليص سيارات وشحنات تجارية ومعدات ثقيلة مع متابعة لحظية وقنوات تواصل مباشرة.">
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="مكتب الشبيبي للتخليص الجمركي – منفذ الوديعة" />
+  <meta property="og:description" content="تخليص جمركي احترافي في منفذ الوديعة: سيارات، بضائع تجارية، معدات ثقيلة، تتبع لحظي، تواصل مباشر." />
+  <meta property="og:image" content="./logo_shabibi.jpg" />
+  <meta property="og:url" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="" />
+  <link rel="icon" href="./logo_shabibi.jpg" />
+  <style>
+    :root {
+      --brand: #0ea5e9;
+      --brand-600: #0284c7;
+      --bg: #0b1020;
+      --surface: #0f172a;
+      --muted: #94a3b8;
+      --text: #e2e8f0;
+      --ring: rgba(14,165,233,.35);
+      --maxw: 1200px;
+      --radius: 1.25rem;
+      --shadow: 0 10px 30px rgba(2,8,23,.35);
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#ffffff; --surface:#f8fafc; --text:#0f172a; --muted:#475569; }
+      body.light { --bg:#ffffff; --surface:#f8fafc; --text:#0f172a; --muted:#475569; }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans Arabic", Cairo, Tahoma, Arial;
+      background: radial-gradient(1200px 600px at 50% -10%, rgba(14,165,233,.15), transparent 60%), var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit;text-decoration:none}
+    .container{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:1.25rem}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.2rem;border-radius:.9rem;font-weight:700;background:var(--brand);color:#fff;box-shadow:var(--shadow);border:1px solid transparent;transition:transform .2s ease,background .2s ease}
+    .btn:hover{transform:translateY(-2px);background:var(--brand-600)}
+    .btn--ghost{background:transparent;border-color:rgba(148,163,184,.35);color:var(--text)}
+    .badge{font-size:.78rem;padding:.35rem .6rem;border-radius:.6rem;border:1px solid rgba(148,163,184,.35);color:var(--muted);display:inline-flex;align-items:center;gap:.4rem}
+    header.site{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);background:color-mix(in oklab, var(--bg) 85%, transparent);border-bottom:1px solid rgba(148,163,184,.12)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+    .logo{display:flex;align-items:center;gap:.75rem;font-weight:900}
+    .nav__links{display:flex;gap:1rem;align-items:center}
+    .nav__links a{padding:.6rem .8rem;border-radius:.6rem;color:var(--muted)}
+    .nav__links a:hover{background:rgba(148,163,184,.12);color:var(--text)}
+    .nav__toggle{display:none}
+    @media (max-width:880px){
+      .nav__links{display:none;position:absolute;inset:64px 1rem auto 1rem;flex-direction:column;background:var(--surface);padding:.75rem;border:1px solid rgba(148,163,184,.18);border-radius:1rem;box-shadow:var(--shadow)}
+      .nav__links.show{display:flex}
+      .nav__toggle{display:inline-flex}
+    }
+    .hero{padding:4rem 0 2rem}
+    .hero__grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+    .hero h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.15;margin:.6rem 0 1rem}
+    .lead{font-size:clamp(1rem,1.4vw,1.2rem);color:var(--muted)}
+    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin-top:1.4rem}
+    .kpi{background:linear-gradient(180deg, rgba(148,163,184,.1), transparent);border:1px solid rgba(148,163,184,.18);padding:1rem;border-radius:.9rem;text-align:center}
+    .kpi b{font-size:1.6rem}
+    .mock{background: radial-gradient(600px 300px at 60% -20%, rgba(14,165,233,.25), transparent 60%), var(--surface);border:1px solid rgba(148,163,184,.18);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow)}
+    .mock__screen{aspect-ratio:16/10;border-radius:.9rem;background:repeating-linear-gradient(135deg, rgba(148,163,184,.12) 0 10px, transparent 10px 20px);display:grid;place-items:center;color:var(--muted);font-weight:700}
+    section.section{padding:4rem 0}
+    .section__head{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;gap:1rem}
+    .section__title{font-size:1.6rem;margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .card{background:var(--surface);border:1px solid rgba(148,163,184,.18);padding:1.25rem;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .card h3{margin-top:.2rem;margin-bottom:.5rem;font-size:1.1rem}
+    .stack{display:flex;flex-wrap:wrap;gap:.5rem}
+    .chip{border:1px solid rgba(148,163,184,.35);padding:.35rem .6rem;border-radius:.6rem;font-size:.82rem;color:var(--muted)}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .plan{background:linear-gradient(180deg, rgba(14,165,233,.08), transparent 50%), var(--surface);border:1px solid rgba(148,163,184,.2);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow)}
+    .plan.featured{border-color:var(--brand);outline:2px solid color-mix(in oklab, var(--brand) 40%, transparent)}
+    .price{font-size:2rem;font-weight:900;margin:.2rem 0 .6rem}
+    .feat{display:flex;align-items:flex-start;gap:.55rem;margin:.4rem 0;color:var(--muted)}
+    details{background:var(--surface);border:1px solid rgba(148,163,184,.18);border-radius:.9rem;padding:.9rem 1rem}
+    details summary{cursor:pointer;font-weight:700}
+    details+details{margin-top:.6rem}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    form{display:grid;gap:.8rem}
+    .field{display:grid;gap:.35rem}
+    input,textarea{width:100%;background:#0b1229;color:var(--text);border:1px solid rgba(148,163,184,.25);border-radius:.75rem;padding:.85rem 1rem;outline:none}
+    textarea{min-height:120px;resize:vertical}
+    input:focus,textarea:focus{border-color:var(--brand);box-shadow:0 0 0 4px var(--ring)}
+    .help{color:var(--muted);font-size:.86rem}
+    footer{padding:2.5rem 0;color:var(--muted);border-top:1px solid rgba(148,163,184,.12)}
+    @media (max-width:1000px){.hero__grid{grid-template-columns:1fr}}
+    @media (max-width:880px){.cards,.pricing,.grid2,.kpis{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="container nav">
+      <a class="logo" href="#home" aria-label="الصفحة الرئيسية">
+        <img src="./logo_shabibi.jpg" alt="شعار مكتب الشبيبي للتخليص الجمركي" style="width:40px;height:40px;border-radius:10px;object-fit:cover" />
+        <span>مكتب الشبيبي للتخليص الجمركي</span>
+      </a>
+      <nav>
+        <button class="btn btn--ghost nav__toggle" aria-label="إظهار القائمة" onclick="toggleMenu()">القائمة</button>
+        <div class="nav__links" id="menu">
+          <a href="#features">المزايا</a>
+          <a href="#services">الخدمات</a>
+          <a href="#work">الأعمال</a>
+          <a href="#pricing">الأسعار</a>
+          <a href="#faq">الأسئلة</a>
+          <a href="#contact" class="btn">تواصل الآن</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="container hero">
+    <div class="hero__grid">
+      <div>
+        <span class="badge">المركز الرئيسي: منفذ الوديعة</span>
+        <h1>مكتب الشبيبي للتخليص الجمركي — المركز الرئيسي: منفذ الوديعة</h1>
+        <p class="help" style="margin:.2rem 0 0;font-weight:700">شحن عالمي. تخليص محلي. معك في كل خطوة.</p>
+        <p class="lead">ننجز معاملات التخليص الجمركي في منفذ الوديعة باحترافية وسرعة—ترسيم المركبات، تخليص الشحنات التجارية، والمعدات الثقيلة، مع متابعة لحظية عبر واتساب واتصال مباشر.</p>
+        <div style="display:flex; gap:.6rem; margin-top:1rem; flex-wrap:wrap;">
+          <a class="btn" href="https://wa.me/967773001000" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">تواصل عبر واتساب الآن</a>
+          <a class="btn btn--ghost" href="#features">جولة سريعة</a>
+        </div>
+        <div class="kpis" aria-label="مؤشرات الثقة">
+          <div class="kpi"><b>منفذ الوديعة</b><div class="help">نطاق الخدمة</div></div>
+          <div class="kpi"><b>إنجاز سريع</b><div class="help">متابعة لحظية</div></div>
+          <div class="kpi"><b>3 أرقام مباشرة</b><div class="help">واتساب واتصال</div></div>
+        </div>
+      </div>
+      <div class="mock">
+        <div class="mock__screen">منطقة معاينة — أضف لقطات من أعمال التخليص</div>
+      </div>
+    </div>
+  </main>
+
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">لماذا الشبيبي؟</h2>
+        <div class="stack">
+          <span class="chip">خبرة منفذ الوديعة</span>
+          <span class="chip">اختصار الوقت</span>
+          <span class="chip">شفافية في التكلفة</span>
+          <span class="chip">تواصل مباشر</span>
+        </div>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>مسار واضح وسريع</h3>
+          <p class="help">نقود معاملتك خطوة بخطوة حتى إنهائها في المنفذ مع تنبيهات حالة فورية.</p>
+        </article>
+        <article class="card">
+          <h3>حلول لكل أنواع الشحن</h3>
+          <p class="help">سيارات خصوصي/نقليات، بضائع تجارية، معدات ثقيلة، وقطع غيار.</p>
+        </article>
+        <article class="card">
+          <h3>قنوات تواصل متعددة</h3>
+          <p class="help">أرقام مباشرة عبر واتساب واتصال—تحديث مستمر حتى الاستلام.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">خدماتنا</h2>
+        <p class="help">تُنفّذ الخدمات من المركز الرئيسي في منفذ الوديعة.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>تخليص المركبات</h3><p class="help">ترسيم سيارات خصوصي/نقل، تعميد، إنهاء الرسوم وإجراءات الدخول.</p></article>
+        <article class="card"><h3>الشحنات التجارية</h3><p class="help">تخليص مستندات البضائع، الفسح، وإصدار الإفراجات.</p></article>
+        <article class="card"><h3>المعدات الثقيلة</h3><p class="help">ترسيم معدّات المشاريع والآليات وقطع الغيار.</p></article>
+        <article class="card"><h3>متابعة ومعاينة</h3><p class="help">تنسيق المعاينات وتحديثات لحظية عبر واتساب.</p></article>
+        <article class="card"><h3>إرشاد المستندات</h3><p class="help">قائمة مستندات جاهزة وتسليم نماذج تفويض إلكتروني.</p></article>
+        <article class="card"><h3>استلام وتسليم</h3><p class="help">تنسيق الاستلام داخل المنفذ وتسليم العميل/الناقل.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">سيناريوهات شائعة</h2>
+        <p class="help">أمثلة مختصرة لما نقوم به يوميًا.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="mock__screen" aria-label="ترسيم سيارات">ترسيم سيارات خصوصي/نقل</div></div>
+        <div class="card"><div class="mock__screen" aria-label="شحنات غذائية">تخليص شحنات غذائية</div></div>
+        <div class="card"><div class="mock__screen" aria-label="معدات مشاريع">معدات وآليات مشاريع</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">باقات الخدمة (إرشادية)</h2>
+        <p class="help">التسعير يعتمد على نوع الشحنة والمستندات—نقدّم عرض سعر سريع بعد مراجعة الأوراق.</p>
+      </div>
+      <div class="pricing">
+        <article class="plan">
+          <h3>مركبات</h3>
+          <div class="price">بالطلب</div>
+          <div class="feat">✅ ترسيم ودخول</div>
+          <div class="feat">✅ متابعة لحظية</div>
+          <a class="btn" href="https://wa.me/967773001000" target="_blank" rel="noopener">اطلب عرض سعر</a>
+        </article>
+        <article class="plan featured">
+          <h3>شحنات تجارية</h3>
+          <div class="price">بالطلب</div>
+          <div class="feat">✅ تخليص مستندات وفسح</div>
+          <div class="feat">✅ تنسيق معاينة</div>
+          <a class="btn" href="https://wa.me/967772285552" target="_blank" rel="noopener">تواصل الآن</a>
+        </article>
+        <article class="plan">
+          <h3>معدات ثقيلة</h3>
+          <div class="price">بالطلب</div>
+          <div class="feat">✅ ترسيم معدات وآليات</div>
+          <div class="feat">✅ دعم لوجستي</div>
+          <a class="btn" href="https://wa.me/967777772675" target="_blank" rel="noopener">استشارة سريعة</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">الأسئلة الشائعة</h2>
+      </div>
+      <details>
+        <summary>ما المستندات المطلوبة لبدء التخليص؟</summary>
+        <div class="help">هوية المالك/المفوّض، تفويض رسمي، الفاتورة، بوليصة الشحن، شهادة المنشأ متى لزم، وقائمة تعبئة. سنرسل لك قائمة محدثة حسب نوع الشحنة.</div>
+      </details>
+      <details>
+        <summary>كم يستغرق إنهاء المعاملة؟</summary>
+        <div class="help">يعتمد على اكتمال المستندات وحركة المنفذ. نسعى لإنجاز سريع مع تحديثات لحظية عبر واتساب.</div>
+      </details>
+      <details>
+        <summary>هل يمكنني المتابعة عن بُعد؟</summary>
+        <div class="help">نعم—نوفر متابعة إلكترونية ورسائل حالة حتى الاستلام.</div>
+      </details>
+      <details>
+        <summary>هل تقدمون خدمة الاستلام والتسليم؟</summary>
+        <div class="help">ننسّق الاستلام داخل المنفذ، وتسليم المركبة/الشحنة للعميل أو الناقل المعتمد.</div>
+      </details>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">تواصل معنا مباشرة</h2>
+        <p class="help">المركز الرئيسي: منفذ الوديعة البري – مديرية العبر، محافظة حضرموت، اليمن.</p>
+      </div>
+      <div class="grid2">
+        <form id="contactForm" onsubmit="return handleSubmit(event)">
+          <div class="field">
+            <label for="name">الاسم الكامل</label>
+            <input id="name" name="name" required placeholder="مثال: أحمد" />
+          </div>
+          <div class="field">
+            <label for="phone">رقم الهاتف (واتساب)</label>
+            <input id="phone" name="phone" inputmode="tel" placeholder="77xxxxxxx" />
+          </div>
+          <div class="field">
+            <label for="msg">نوع المعاملة</label>
+            <textarea id="msg" name="message" required placeholder="سيارة خصوصي / شحنة تجارية / معدات..."></textarea>
+          </div>
+          <button class="btn" type="submit">إرسال عبر واتساب</button>
+          <p class="help">أو اختر رقمًا مباشرًا:
+            <a class="chip" href="https://wa.me/967773001000" target="_blank" rel="noopener">773001000</a>
+            <a class="chip" href="https://wa.me/967772285552" target="_blank" rel="noopener">772285552</a>
+            <a class="chip" href="https://wa.me/967777772675" target="_blank" rel="noopener">777772675</a>
+            <a class="chip" href="https://wa.me/967774769848" target="_blank" rel="noopener">774769848</a>
+          </p>
+        </form>
+        <aside class="card">
+          <h3>بيانات التواصل</h3>
+          <p class="help">هاتف: <a href="tel:+967773001000">+967 773 001 000</a> / <a href="tel:+967772285552">+967 772 285 552</a><br>
+          هاتف: <a href="tel:+967777772675">+967 777 772 675</a> / <a href="tel:+967774769848">+967 774 769 848</a><br>
+          بريد: <a href="mailto:ail777772675@gmail.com">ail777772675@gmail.com</a></p>
+          <h3>العنوان</h3>
+          <p class="help">المركز الرئيسي: منفذ الوديعة البري – حضرموت.</p>
+          <h3>خريطة الموقع</h3>
+          <div class="help">
+            <iframe title="خريطة منفذ الوديعة" src="https://www.google.com/maps?q=%D9%85%D9%86%D9%81%D8%B0+%D8%A7%D9%84%D9%88%D8%AF%D9%8A%D8%B9%D8%A9&output=embed" width="100%" height="260" style="border:0;border-radius:.9rem;"></iframe>
+          </div>
+          <h3>ساعات الخدمة</h3>
+          <p class="help">السبت–الخميس: 8 ص – 6 م</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+      <small>© <span id="year"></span> مكتب الشبيبي للتخليص الجمركي. جميع الحقوق محفوظة.</small>
+      <div class="stack">
+        <a class="chip" href="#">سياسة الخصوصية</a>
+        <a class="chip" href="#">الشروط والأحكام</a>
+        <button class="chip" onclick="toggleTheme()" aria-label="تبديل النمط">تبديل المظهر</button>
+      </div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "مكتب الشبيبي للتخليص الجمركي",
+    "description": "المركز الرئيسي: منفذ الوديعة البري. تخليص سيارات، شحنات تجارية، معدات ثقيلة، متابعة لحظية.",
+    "url": "",
+    "telephone": "+967773001000",
+    "contactPoint": [
+      {"@type":"ContactPoint","telephone":"+967773001000","contactType":"customer service","areaServed":"YE","email":"ail777772675@gmail.com"},
+      {"@type":"ContactPoint","telephone":"+967772285552","contactType":"customer service","areaServed":"YE"},
+      {"@type":"ContactPoint","telephone":"+967777772675","contactType":"customer service","areaServed":"YE"},
+      {"@type":"ContactPoint","telephone":"+967774769848","contactType":"customer service","areaServed":"YE"}
+    ],
+    "address": {"@type":"PostalAddress","addressLocality":"الوديعة","addressRegion":"حضرموت","addressCountry":"YE"},
+    "areaServed": "منفذ الوديعة",
+    "hasMap": "https://www.google.com/maps?q=%D9%85%D9%86%D9%81%D8%B0+%D8%A7%D9%84%D9%88%D8%AF%D9%8A%D8%B9%D8%A9"
+  }
+  </script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function toggleMenu(){ document.getElementById('menu').classList.toggle('show'); }
+    function toggleTheme(){ document.body.classList.toggle('light'); }
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const msg = document.getElementById('msg').value.trim();
+      const waText = encodeURIComponent(`مرحبًا، أنا ${name}. هاتفي: ${phone}. بخصوص: ${msg}`);
+      const wa = `https://wa.me/967773001000?text=${waText}`;
+      window.open(wa, '_blank');
+      return false;
+    }
+  </script>
+</body>
+</html>
